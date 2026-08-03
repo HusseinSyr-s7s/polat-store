@@ -25,6 +25,17 @@ export default function Cart({ items }: CartProps) {
   الإجمالي: {total} جنيه
 </p>
 <a
+  href={`https://wa.me/201021409017?text=${encodeURIComponent(
+    "أريد طلب:\n" +
+    items.map((item) => `${item.name} - ${item.price} جنيه`).join("\n") +
+    `\nالإجمالي: ${total} جنيه`
+  )}`}
+  target="_blank"
+  className="block bg-green-500 text-black font-bold px-5 py-3 rounded-lg mt-5"
+>
+  اطلب عبر واتساب 📱
+</a>
+<a
   href="https://wa.me/201021409017?text=مرحبا%20أريد%20طلب%20من%20POLAT%20STORE"
   target="_blank"
   className="block bg-green-500 text-black px-5 py-2 rounded-lg mt-4 font-bold"
