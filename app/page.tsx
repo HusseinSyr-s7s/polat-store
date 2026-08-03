@@ -74,34 +74,59 @@
     name="نظارة شمسية فاخرة"
     price={199}
     image="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
-    addToCart={() => setCartItems([...cartItems, "نظارة شمسية فاخرة"])}
+    addToCart={() =>
+  setCartItems([
+    ...cartItems,
+    { name: "نظارة شمسية فاخرة", price: 199 }
+  ])
+}
   />
 
   <ProductCard
     name="سلسلة ستانلس"
     price={149}
     image="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f"
-    addToCart={() => setCartItems([...cartItems, "سلسلة ستانلس"])}
+   addToCart={() =>
+  setCartItems([
+    ...cartItems,
+    { name: "سلسلة ستانلس", price: 149 }
+  ])
+}
   />
 <ProductCard
   name="محفظة جلد فاخرة"
   price={299}
   image="https://images.unsplash.com/photo-1627123424574-724758594e93"
-  addToCart={() => setCartItems([...cartItems, "محفظة جلد فاخرة"])}
+  addToCart={() =>
+  setCartItems([
+    ...cartItems,
+    { name: "محفظة جلد فاخرة", price: 299 }
+  ])
+}
 />
 
 <ProductCard
   name="خاتم رجالي"
   price={179}
   image="https://images.unsplash.com/photo-1605100804763-247f67b3557e"
-  addToCart={() => setCartItems([...cartItems, "خاتم رجالي"])}
+  addToCart={() =>
+  setCartItems([
+    ...cartItems,
+    { name: "خاتم رجالي", price: 179 }
+  ])
+}
 />
 
 <ProductCard
   name="سماعة لاسلكية"
   price={399}
   image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
-  addToCart={() => setCartItems([...cartItems, "سماعة لاسلكية"])}
+  addToCart={() =>
+  setCartItems([
+    ...cartItems,
+    { name: "سماعة لاسلكية", price: 399 }
+  ])
+}
 />
 </section>
     </main>
