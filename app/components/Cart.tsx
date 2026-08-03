@@ -62,8 +62,7 @@ const [address, setAddress] = useState("");
 ${items.map((item) => `${item.name} - ${item.price} جنيه`).join("\n")}
 
 الإجمالي: ${total} جنيه`;
-alert(name + " - " + phone + " - " + address);
-console.log(message);
+
 
     window.open(
       `https://wa.me/201021409017?text=${encodeURIComponent(message)}`,
