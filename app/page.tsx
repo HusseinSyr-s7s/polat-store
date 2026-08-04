@@ -2,9 +2,10 @@
  import ProductCard from "./components/ProductCard";
  import Cart from "./components/Cart";
  import { useState } from "react";
+ import { products } from "./data/products";
  export default function Home() {
-  const [cartItems, setCartItems] = useState<
-  { name: string; price: number }[]
+ const [cartItems, setCartItems] = useState<
+  { name: string; price: number; quantity: number }[]
 >([]);
   return (
     <main className="min-h-screen bg-black text-white">
@@ -61,76 +62,24 @@
 
         <section className="grid grid-cols-1 md:grid-cols-3 gap-6 p-10">
 
-  <ProductCard
-    name="ساعة رجالية كلاسيك"
-    price={249}
-    image="https://images.unsplash.com/photo-1523275335684-37898b6baf30"
-   addToCart={() =>
-  setCartItems([
-    ...cartItems,
-    { name: "ساعة رجالية كلاسيك", price: 249 }
-  ])
-}
-  />
+  {products.map((product) => (
+    <ProductCard
+      key={product.name}
+      name={product.name}
+      price={product.price}
+      image={product.image}
+      addToCart={() =>
+        setCartItems([
+          ...cartItems,
+          {
+            name: product.name,
+            price: product.price,
+          },
+        ])
+      }
+    />
+  ))}
 
-  <ProductCard
-    name="نظارة شمسية فاخرة"
-    price={199}
-    image="https://images.unsplash.com/photo-1511499767150-a48a237f0083"
-    addToCart={() =>
-  setCartItems([
-    ...cartItems,
-    { name: "نظارة شمسية فاخرة", price: 199 }
-  ])
-}
-  />
-
-  <ProductCard
-    name="سلسلة ستانلس"
-    price={149}
-    image="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f"
-   addToCart={() =>
-  setCartItems([
-    ...cartItems,
-    { name: "سلسلة ستانلس", price: 149 }
-  ])
-}
-  />
-<ProductCard
-  name="محفظة جلد فاخرة"
-  price={299}
-  image="https://images.unsplash.com/photo-1627123424574-724758594e93"
-  addToCart={() =>
-  setCartItems([
-    ...cartItems,
-    { name: "محفظة جلد فاخرة", price: 299 }
-  ])
-}
-/>
-
-<ProductCard
-  name="خاتم رجالي"
-  price={179}
-  image="https://images.unsplash.com/photo-1605100804763-247f67b3557e"
-  addToCart={() =>
-  setCartItems([
-    ...cartItems,
-    { name: "خاتم رجالي", price: 179 }
-  ])
-}
-/>
-
-<ProductCard
-  name="سماعة لاسلكية"
-  price={399}
-  image="https://images.unsplash.com/photo-1505740420928-5e560c06d30e"
-  addToCart={() =>
-  setCartItems([
-    ...cartItems,
-    { name: "سماعة لاسلكية", price: 399 }
-  ])
-}
-/>
 </section>
     </main>
   );
