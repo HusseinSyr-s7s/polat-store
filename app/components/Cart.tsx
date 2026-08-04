@@ -1,9 +1,12 @@
 import { useState } from "react";
 type CartProps = {
   items: { name: string; price: number }[];
+  setCartItems: React.Dispatch<
+    React.SetStateAction<{ name: string; price: number }[]>
+  >;
 };
 
-export default function Cart({ items }: CartProps) {
+export default function Cart({ items, setCartItems }: CartProps) {
   const total = items.reduce((sum, item) => sum + item.price, 0);
 const [name, setName] = useState("");
 const [phone, setPhone] = useState("");
@@ -19,11 +22,23 @@ const [address, setAddress] = useState("");
           السلة فارغة حاليًا
         </p>
       ) : (
-        items.map((item, index) => (
-          <p key={index} className="mt-2">
-            {item.name} - {item.price} جنيه
-          </p>
-        ))
+       items.map((item, index) => (
+  <div key={index} className="flex justify-between items-center mt-2">
+    <p>
+      {item.name} - {item.price} جنيه
+    </p>
+
+    <button
+  onClick={() => {
+    console.log("حذف:", item);
+    setCartItems(items.filter((_, i) => i !== index));
+  }}
+  className="bg-red-500 text-white px-3 py-1 rounded"
+>
+  حذف
+</button>
+  </div>
+))
       )}
 
       <p className="text-yellow-400 font-bold mt-4">

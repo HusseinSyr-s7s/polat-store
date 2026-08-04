@@ -18,7 +18,10 @@
     POLAT STORE
   </h1>
 </div>
-<Cart items={cartItems} />
+<Cart 
+  items={cartItems}
+  setCartItems={setCartItems}
+/>
         <nav className="space-x-6">
           <span>الرئيسية</span>
           <span>المنتجات</span>
