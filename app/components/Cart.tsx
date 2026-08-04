@@ -64,7 +64,12 @@ const [address, setAddress] = useState("");
   onChange={(e) => setAddress(e.target.value)}
   className="w-full mt-3 p-2 rounded text-black"
 />
-
+<button
+  onClick={() => setCartItems([])}
+  className="block w-full bg-red-600 text-white font-bold px-5 py-3 rounded-lg mt-5"
+>
+  🗑️ تفريغ السلة
+</button>
       <button
   onClick={() => {
     const message = `طلب جديد من POLAT STORE
