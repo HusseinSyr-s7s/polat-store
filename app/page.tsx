@@ -7,7 +7,7 @@ import { products } from "./data/products";
 
 export default function Home() {
   const [cartItems, setCartItems] = useState<
-    { name: string; price: number }[]
+    { name: string; price: number; quantity: number }[]
   >([]);
 
   return (
@@ -77,6 +77,7 @@ export default function Home() {
                 {
                   name: product.name,
                   price: product.price,
+                  quantity: 1,
                 },
               ])
             }
