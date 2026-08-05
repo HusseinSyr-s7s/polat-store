@@ -136,7 +136,7 @@ return ( <main className="min-h-screen bg-black text-white">
 
         image={product.image}
 
-
+category={product.category}
         addToCart={() => {
 
           const oldProduct = cartItems.find(
