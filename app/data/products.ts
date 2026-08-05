@@ -59,4 +59,106 @@ export const products = [
     image: "https://images.unsplash.com/photo-1546435770-a3e426bf472b",
     category: "إلكترونيات",
   },
+
+ // بيجامات رجالي
+{
+  name: "بيجامة رجالي قطن كلاسيك",
+  price: 299,
+  image: "https://tse4.mm.bing.net/th/id/OIP.n8Qv2reviMIzWnHt5-VdmwHaJ4?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+{
+  name: "بيجامة رجالي شتوية",
+  price: 399,
+  image: "https://tse2.mm.bing.net/th/id/OIP.ggvsTT1lLm3NzQKppB4wogHaLG?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+{
+  name: "بيجامة رجالي رياضية",
+  price: 349,
+  image: "https://tse3.mm.bing.net/th/id/OIP.v1b0S-hiJWXomFQwT5-FnQHaJQ?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+{
+  name: "بيجامة رجالي مخططة",
+  price: 279,
+  image: "https://tse3.mm.bing.net/th/id/OIP.b4xVChPh6OVuwXItomRQEgHaHa?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+{
+  name: "بيجامة رجالي فخمة",
+  price: 499,
+  image: "https://tse4.mm.bing.net/th/id/OIP.7WPrZ0pP9JK_T4BRpfi4NgHaHa?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+{
+  name: "بيجامة رجالي صيفي",
+  price: 249,
+  image: "https://tse2.mm.bing.net/th/id/OIP.lZvhIGCglbtKCsHSI-Ov3QHaHa?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+{
+  name: "بيجامة رجالي منزلية",
+  price: 259,
+  image: "https://tse2.mm.bing.net/th/id/OIP.JIfLK-R2Pua0uAzaFH_ApQHaJQ?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+{
+  name: "بيجامة رجالي ملكية",
+  price: 599,
+  image: "https://tse2.mm.bing.net/th/id/OIP.NqLV50DYlPUgsKmuvx0yjwHaJQ?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات رجالي",
+},
+
+
+// بيجامات حريمي
+{
+  name: "بيجامة حريمي ناعمة",
+  price: 299,
+  image: "https://tse2.mm.bing.net/th/id/OIP.ywfYoZOWX-LhtBEsiJohtgHaJx?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+{
+  name: "بيجامة حريمي شتوية",
+  price: 449,
+  image: "https://tse2.mm.bing.net/th/id/OIP.HTRpupNAXL0L1HS546b3awHaJx?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+{
+  name: "بيجامة حريمي قطن",
+  price: 329,
+  image: "https://tse4.mm.bing.net/th/id/OIP.KxsR-xfd1EXW7doPew80uQHaJx?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+{
+  name: "بيجامة حريمي وردية",
+  price: 299,
+  image: "https://tse2.mm.bing.net/th/id/OIP.I1whZ7PUGZl6O9tkXier2AHaJx?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+{
+  name: "بيجامة حريمي فخمة",
+  price: 599,
+  image: "https://tse4.mm.bing.net/th/id/OIP.DM98E5wxIJjVemKM5Ni4zgHaJQ?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+{
+  name: "بيجامة حريمي ساتان",
+  price: 499,
+  image: "https://tse1.mm.bing.net/th/id/OIP.oIodclUaMK5OMbBQqkeAUwHaJQ?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+{
+  name: "بيجامة حريمي صيفي",
+  price: 249,
+  image: "https://tse2.mm.bing.net/th/id/OIP.8Pb5eOaJmZhk5DoLku6ppgHaJQ?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+{
+  name: "بيجامة حريمي كلاسيك",
+  price: 349,
+  image: "https://tse2.mm.bing.net/th/id/OIP.uIqWeaya3aTkXyzgIxzh4QHaJQ?r=0&pid=Api&h=220&P=0",
+  category: "بيجامات حريمي",
+},
+
 ];
